@@ -30,8 +30,3 @@ plot_overlaying_scales <- function(root.note.1='C',root.note.2='G',mode.1='Minor
 #                 rgb(0.8039216,0.1490196,0.1490196,1),
 #                 rgb(0.745098,0.745098,0.745098,1)))
 # }
-
-### make three tabs:
-# 1) plot just one scale across a lot of octaves
-# 2) plot two overlaying different scales
-# 3) plot one scale with chord legend
