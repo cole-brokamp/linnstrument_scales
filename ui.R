@@ -2,6 +2,11 @@
 
 library(shiny)
 
+source('linnplot_functions.R')
+source('defs_resources.R')
+source('note_functions.R')
+source('linnstrument_scales.R')
+
 # navbarPage("Navbar!",
            # tabPanel("Plot",
 
