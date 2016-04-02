@@ -24,8 +24,9 @@ shinyUI(fluidPage(
            imageOutput('chord_legend')
     ),
     column(2,
-           br(),
            h4('Linnstrument Scale Explorer'),
-           h5('Questions/Comments: cole.brokamp@gmail.com')
+           h5('Created by:'),
+           h5('cole.brokamp@gmail.com'),
+           h5('@cole_brokamp')
   ))
 ))
