@@ -19,17 +19,17 @@ plot_overlaying_scales <- function(root.note.1='C',root.note.2='G',mode.1='Minor
 # plot_overlaying_scales(octave=3)
 
 # plot smaller linnstrument
-# plotScaleSmall(root.note='G',musical.mode='Minor',zoom.factor=1,key.colors=TRUE)
+plotScaleSmall(root.note='G',musical.mode='Minor',zoom.factor=1,key.colors=TRUE)
 
-plot_chord_legend <- function(){
-  plot(1,1,xaxt='n',yaxt='n',bty='n',pch=NA)
-  legend(title='chord type',horiz=T,
-         'center',legend=c('minor','major','dim'),
-         bty='n',cex=2,
-         fill=c(rgb(0.5294118,0.8078431,1,1),
-                rgb(0.8039216,0.1490196,0.1490196,1),
-                rgb(0.745098,0.745098,0.745098,1)))
-}
+# plot_chord_legend <- function(){
+#   plot(1,1,xaxt='n',yaxt='n',bty='n',pch=NA)
+#   legend(title='chord type',horiz=F,
+#          'center',legend=c('minor','major','dim'),
+#          bty='n',cex=2,
+#          fill=c(rgb(0.5294118,0.8078431,1,1),
+#                 rgb(0.8039216,0.1490196,0.1490196,1),
+#                 rgb(0.745098,0.745098,0.745098,1)))
+# }
 
 ### make three tabs:
 # 1) plot just one scale across a lot of octaves

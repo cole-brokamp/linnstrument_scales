@@ -14,5 +14,5 @@ shinyServer(function(input, output, session) {
     plotScaleSmall(root.note=input$root.note,musical.mode=input$musical.mode,
                    zoom.factor=input$zoom.factor,key.colors=input$key.colors)
   })
-  output$chord_legend <- renderPlot(plot_chord_legend())
+  output$chord_legend <- renderImage(list(src='chord_type_legend.png'),deleteFile=FALSE)
 })
