@@ -76,9 +76,10 @@ shinyUI(navbarPage('Linnstrument Scale Explorer',
                                        h4('Linnstrument Scale Explorer'),
                                        br(),
                                        br(),
-                                       h5('Created by:'),
-                                       h5('cole.brokamp@gmail.com'),
-                                       h5('@cole_brokamp')
+                                       p('Created by Cole Brokamp'),
+                                       p('cole.brokamp@gmail.com'),
+                                       p('@cole_brokamp'),
+                                       a('Source code on GitHub',href='https://github.com/cole-brokamp/linnstrument_scales')
                                 )
                               )
                             )
