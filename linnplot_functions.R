@@ -7,9 +7,9 @@ plotLinn <- function(zoom.factor=1,accent.notes='C',main.notes=c('D','E','F','G'
   sapply(1:26,function(x) lines(x=c(x-0.5,x-0.5),c(0.5,8.5)))
   sapply(1:9,function(y) lines(x=c(0.5,25.5),y=c(y-0.5,y-0.5)))
   points(CB::CBapply(accent.notes,noteNameToPlotIndicies),
-         col=rgb(0, 1, 0, 0.25),pch=19,cex=2.75*zoom.factor)
-  points(CB::CBapply(main.notes,noteNameToPlotIndicies),
          col=rgb(0, 0, 1, 0.25),pch=19,cex=2.75*zoom.factor)
+  points(CB::CBapply(main.notes,noteNameToPlotIndicies),
+         col=rgb(0, 1, 0, 0.25),pch=19,cex=2.75*zoom.factor)
 }
 
 
@@ -106,8 +106,8 @@ plotScaleSmall <- function(root.note='C',musical.mode='Major',zoom.factor=1,key.
     points(scale.points.unique,col=box.colors,bg=box.colors,pch=22,cex=8*zoom.factor)
   }
   
-  points(CB::CBapply(accent.notes,noteNameToPlotIndiciesSmall),col=rgb(0, 1, 0, 1),pch=19,cex=6*zoom.factor)
-  points(CB::CBapply(main.notes,noteNameToPlotIndiciesSmall),col=rgb(0, 0, 1, 1),pch=19,cex=6*zoom.factor)
+  points(CB::CBapply(accent.notes,noteNameToPlotIndiciesSmall),col=rgb(0, 0, 1, 0.5),pch=19,cex=6*zoom.factor)
+  points(CB::CBapply(main.notes,noteNameToPlotIndiciesSmall),col=rgb(0, 1, 0, 0.5),pch=19,cex=6*zoom.factor)
   
   points(scale.points.unique,col='black',cex=4*zoom.factor,pch=19)
   points(scale.points.unique,col=rgb(1,1,1,1),cex=1.4*zoom.factor,
