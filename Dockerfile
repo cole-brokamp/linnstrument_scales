@@ -1,0 +1,1 @@
+FROM colebrokamp/shiny:latest
